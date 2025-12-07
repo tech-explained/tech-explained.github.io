@@ -33,14 +33,9 @@ class NewsletterManager {
         submitBtn.textContent = 'Subscribing...';
 
         try {
-            // Option 1: Use a newsletter service (Mailchimp, ConvertKit, etc.)
-            // await this.subscribeToMailchimp(email);
-
-            // Option 2: Use a serverless function (Netlify, Vercel, etc.)
-            // await this.subscribeViaServerless(email);
-
-            // Option 3: Store locally and export (for static sites)
-            await this.subscribeLocally(email);
+            // Use Formspree (FREE - no backend needed!)
+            // Sign up at formspree.io and replace YOUR_FORM_ID below
+            await this.subscribeViaFormspree(email);
 
             // Success
             this.showMessage(messageDiv, '🎉 Successfully subscribed! Check your email.', 'success');
@@ -55,7 +50,9 @@ class NewsletterManager {
             }
 
         } catch (error) {
-            this.showMessage(messageDiv, 'Something went wrong. Please try again.', 'error');
+            // Show user-friendly error message
+            const errorMessage = error.message || 'Something went wrong. Please try again.';
+            this.showMessage(messageDiv, errorMessage, 'error');
             console.error('Newsletter subscription error:', error);
         } finally {
             submitBtn.disabled = false;
@@ -129,7 +126,36 @@ class NewsletterManager {
         return response.json();
     }
 
-    // Serverless function example (Netlify/Vercel)
+    // Formspree (FREE & EASY - Recommended!)
+    async subscribeViaFormspree(email) {
+        // Replace YOUR_FORM_ID with your actual Formspree form ID
+        // Get it from: https://formspree.io (free signup)
+        const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+
+        const response = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                email: email,
+                _subject: 'New Newsletter Subscription',
+            })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+            if (data.errors) {
+                throw new Error(data.errors.map(e => e.message).join(', '));
+            }
+            throw new Error('Subscription failed');
+        }
+
+        return data;
+    }
+
+    // Serverless function (Netlify) - Mailchimp Integration
     async subscribeViaServerless(email) {
         const response = await fetch('/.netlify/functions/subscribe', {
             method: 'POST',
@@ -139,11 +165,13 @@ class NewsletterManager {
             body: JSON.stringify({ email })
         });
 
+        const data = await response.json();
+
         if (!response.ok) {
-            throw new Error('Subscription failed');
+            throw new Error(data.error || 'Subscription failed');
         }
 
-        return response.json();
+        return data;
     }
 }
 

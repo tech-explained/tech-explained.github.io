@@ -1,0 +1,8 @@
+# Netlify Configuration
+[build]
+  functions = "netlify/functions"
+
+# Environment variables (set these in Netlify dashboard)
+# MAILCHIMP_API_KEY = your-api-key
+# MAILCHIMP_LIST_ID = your-list-id
+# MAILCHIMP_SERVER_PREFIX = us1 (or your server prefix)
