@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GraphQL Explained: Think Custom Menu | Tech Made Simple</title>
+    <meta name="category" content="architecture">
+    <meta name="tags" content="graphql api query-language">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="../css/advanced-features.css">
 </head>
 
 <body>
@@ -15,7 +18,11 @@
         <div class="container">
             <a href="../index.html" class="back-button">← Back to Home</a>
             <h1>🎯 GraphQL: Think Custom Menu</h1>
-            <p class="post-meta">📅 December 7, 2025 | ⏱️ 6 min read</p>
+            <p class="post-meta">
+                <span>📅 December 7, 2025</span>
+                <span class="reading-time">⏱️ 6 min read</span>
+            </p>
+            <button id="bookmarkBtn" class="bookmark-btn">☆ Bookmark</button>
         </div>
     </header>
     <main class="container">
@@ -111,6 +118,9 @@
                 <button class="share-btn reddit" onclick="shareOnReddit()">🔴 Reddit</button>
                 <button class="share-btn copy" onclick="copyLink()">🔗 Copy Link</button>
             </div>
+
+            <!-- Related Posts -->
+            <div id="relatedPosts" class="related-posts"></div>
         </article>
     </main>
     <footer>
@@ -123,6 +133,7 @@
     <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
     <script src="../js/features.js"></script>
+    <script src="../js/advanced-features.js"></script>
 </body>
 
 </html>
