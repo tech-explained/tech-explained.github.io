@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases: Your Computer's Filing Cabinet | Tech Made Simple</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+        header { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 2rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .back-button { display: inline-block; color: white; text-decoration: none; margin-bottom: 1rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); border-radius: 5px; transition: background 0.3s; }
+        .back-button:hover { background: rgba(255,255,255,0.3); }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .post-meta { opacity: 0.9; font-size: 1rem; }
+        article { background: white; padding: 3rem 2rem; margin: 2rem 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .hero-icon { text-align: center; font-size: 100px; margin: 2rem 0; padding: 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; }
+        h2 { color: #f5576c; margin: 2rem 0 1rem 0; font-size: 1.8rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+        .example-box { background: #fff5f7; border-left: 4px solid #f5576c; padding: 1.5rem; margin: 2rem 0; border-radius: 8px; }
+        .example-box strong { color: #f5576c; display: block; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin: 0.75rem 0; font-size: 1.05rem; }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 2rem; }
+        .tag { background: #ffe8f0; color: #f5576c; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+        footer { background: #333; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>🗄️ Databases: Your Computer's Filing Cabinet</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 4 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">🗄️</div>
+            
+            <p>Every app you use - from social media to banking - stores information. But where does all this data go? The answer is <strong>databases</strong>!</p>
+            
+            <div class="example-box">
+                <strong>📚 Think of it like a library</strong>
+                <p>A database is like a highly organized library where information is stored in tables (like different sections of the library). Each table has rows (individual books) and columns (information about each book like title, author, year).</p>
+            </div>
+            
+            <h2>How Databases Work</h2>
+            <p>Imagine a physical filing cabinet with multiple drawers:</p>
+            <ul>
+                <li>🗄️ Each <strong>drawer</strong> is like a table in a database</li>
+                <li>📁 Each <strong>folder</strong> in the drawer is like a row (one record)</li>
+                <li>📝 The <strong>information</strong> in each folder is organized by categories (columns)</li>
+            </ul>
+            
+            <h2>Real-World Example: Netflix</h2>
+            <p>When you log into Netflix, here's what happens behind the scenes:</p>
+            <ol>
+                <li><strong>Step 1:</strong> You enter your email and password</li>
+                <li><strong>Step 2:</strong> Netflix checks its database (the filing cabinet) to see if your account exists</li>
+                <li><strong>Step 3:</strong> If it matches, it pulls up YOUR specific data - your watch history, preferences, etc.</li>
+                <li><strong>Step 4:</strong> Netflix then shows you personalized recommendations based on that stored information</li>
+            </ol>
+            
+            <div class="example-box">
+                <strong>💡 The Key Insight</strong>
+                <p>Without databases, every time you opened Netflix, it would be like visiting for the first time. You'd have to start from scratch! Databases remember everything about you so you don't have to.</p>
+            </div>
+            
+            <h2>Types of Data Stored in Databases</h2>
+            <ul>
+                <li>👤 <strong>User accounts:</strong> Your username, password, profile picture</li>
+                <li>🛒 <strong>Shopping history:</strong> What you've bought, when, and for how much</li>
+                <li>💬 <strong>Messages:</strong> Your texts, emails, and social media posts</li>
+                <li>📸 <strong>Photos and videos:</strong> All your uploaded content</li>
+                <li>⭐ <strong>Preferences:</strong> Your likes, favorites, and settings</li>
+            </ul>
+            
+            <h2>Why Databases Are Essential</h2>
+            <p>Databases allow applications to:</p>
+            <ul>
+                <li>✅ <strong>Remember</strong> who you are when you come back</li>
+                <li>✅ <strong>Organize</strong> massive amounts of information efficiently</li>
+                <li>✅ <strong>Search</strong> through millions of records in milliseconds</li>
+                <li>✅ <strong>Keep data safe</strong> with backups and security</li>
+                <li>✅ <strong>Share information</strong> between different parts of an application</li>
+            </ul>
+            
+            <p><strong>The bottom line:</strong> Databases are the memory of every application you use. Just like you organize important documents in a filing cabinet at home, apps organize YOUR data in digital databases!</p>
+            
+            <div class="tags">
+                <span class="tag">Databases</span>
+                <span class="tag">Data Storage</span>
+                <span class="tag">Real-World Examples</span>
+                <span class="tag">Software Engineering</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+</html>
