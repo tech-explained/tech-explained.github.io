@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Engineering Blog - Explaining tech concepts in layman terms with real-world examples">
+    <title>Tech Made Simple | Software Engineering Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 3rem 0;
+        }
+        
+        .blog-post {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .blog-post h2 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .post-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-post p {
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: #764ba2;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #e8eaf6;
+            color: #667eea;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .about-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-post {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚀 Tech Made Simple</h1>
+            <p class="tagline">Software Engineering Explained Through Real-World Examples</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="about-section">
+            <h2>Welcome to Tech Made Simple!</h2>
+            <p>Ever wondered what software engineers actually do? We break down complex technical concepts using everyday analogies and real-world examples that anyone can understand. Whether you're curious about how apps work, interested in a tech career, or just want to understand the digital world better, you're in the right place!</p>
+        </section>
+        
+        <article class="blog-post">
+            <h2>What is an API? Think of it as a Restaurant Menu</h2>
+            <div class="post-meta">📅 December 7, 2025 | ⏱️ 5 min read</div>
+            <p>Have you ever wondered how your weather app gets its data? Or how food delivery apps show you restaurant menus? The answer is APIs - Application Programming Interfaces.</p>
+            <p><strong>The Restaurant Analogy:</strong> Imagine you're at a restaurant. You don't go into the kitchen and cook your own food, right? Instead, you use a menu to see what's available, tell the waiter what you want, and the kitchen prepares it for you. An API works the same way!</p>
+            <p>• The <strong>menu</strong> is like the API documentation (showing what you can request)</p>
+            <p>• The <strong>waiter</strong> is the API itself (taking your request to the kitchen)</p>
+            <p>• The <strong>kitchen</strong> is the server/database (where the actual work happens)</p>
+            <p>• Your <strong>meal</strong> is the data/response you get back</p>
+            <p>When you check the weather on your phone, your app is the customer, the weather service's API is the waiter, and the weather database is the kitchen. The app doesn't need to know HOW the weather data is collected - it just needs to know how to ask for it (through the API).</p>
+            <div>
+                <span class="tag">APIs</span>
+                <span class="tag">Basics</span>
+                <span class="tag">Analogies</span>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <h2>Databases: Your Computer's Filing Cabinet</h2>
+            <div class="post-meta">📅 December 7, 2025 | ⏱️ 4 min read</div>
+            <p>Every app you use - from social media to banking - stores information. But where does all this data go? The answer is databases!</p>
+            <p><strong>Think of it like a library:</strong> A database is like a highly organized library where information is stored in tables (like different sections of the library). Each table has rows (individual books) and columns (information about each book like title, author, year).</p>
+            <p><strong>Real-world example:</strong> When you log into Netflix, here's what happens:</p>
+            <p>1. You enter your email and password</p>
+            <p>2. Netflix checks its database (the filing cabinet) to see if your account exists</p>
+            <p>3. If it matches, it pulls up YOUR specific data - your watch history, preferences, etc.</p>
+            <p>4. Netflix then shows you personalized recommendations based on that stored information</p>
+            <p>Without databases, every time you opened Netflix, it would be like visiting for the first time. You'd have to start from scratch!</p>
+            <div>
+                <span class="tag">Databases</span>
+                <span class="tag">Data Storage</span>
+                <span class="tag">Real-World Examples</span>
+            </div>
+        </article>
+        
+        <article class="blog-post">
+            <h2>Version Control (Git): Like Track Changes for Code</h2>
+            <div class="post-meta">📅 December 7, 2025 | ⏱️ 6 min read</div>
+            <p>Ever worked on a document with multiple people and wished you could see who changed what? Or wanted to undo changes from three days ago? That's exactly what version control does for software engineers!</p>
+            <p><strong>The Google Docs Analogy:</strong> Think about collaborating on a Google Doc. You can see the edit history, revert to previous versions, and see who made what changes. Git (and GitHub) does this for code, but with superpowers!</p>
+            <p><strong>Why it matters:</strong> Imagine you're building a house with a team:</p>
+            <p>• Without version control: If someone makes a mistake, you might have to tear down walls to fix it</p>
+            <p>• With version control: You have a "save point" before each change. Made a mistake? Just reload the last save!</p>
+            <p><strong>Real-world scenario:</strong> At 3 PM, you add a new feature to your app and it works great. At 5 PM, you make another change and suddenly everything breaks. With Git, you can travel back in time to 3 PM when everything worked, figure out what went wrong, and fix it properly.</p>
+            <p>This is why tech companies love Git - it lets teams of hundreds of engineers work on the same project without stepping on each other's toes!</p>
+            <div>
+                <span class="tag">Git</span>
+                <span class="tag">Version Control</span>
+                <span class="tag">Collaboration</span>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+            <p>Built with ❤️ for curious minds | Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+</body>
+</html>
