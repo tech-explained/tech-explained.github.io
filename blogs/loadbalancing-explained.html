@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Balancing Explained: Think Restaurant Host | Tech Made Simple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>🎯 Load Balancing: Think Restaurant Host</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 5 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">🎯</div>
+
+            <p>Load balancing distributes traffic across multiple servers. Think of it as a <strong>restaurant
+                    host</strong> seating guests evenly across tables - ensuring no server is overwhelmed.</p>
+
+            <div class="example-box">
+                <strong>🎯 The Restaurant Host Analogy</strong>
+                <p>A restaurant host doesn't seat everyone at one table. They distribute guests evenly so all servers
+                    handle a fair workload. Load balancers do the same - distribute incoming requests across multiple
+                    servers.</p>
+            </div>
+
+            <h2>Why Load Balance?</h2>
+            <ul>
+                <li>📈 <strong>Scalability:</strong> Handle more traffic</li>
+                <li>🛡️ <strong>Reliability:</strong> If one server fails, others continue</li>
+                <li>⚡ <strong>Performance:</strong> Faster response times</li>
+                <li>🔄 <strong>Flexibility:</strong> Add/remove servers easily</li>
+            </ul>
+
+            <h2>Load Balancing Algorithms</h2>
+            <ul>
+                <li>🔄 <strong>Round Robin:</strong> Rotate through servers equally</li>
+                <li>⚖️ <strong>Least Connections:</strong> Send to server with fewest active connections</li>
+                <li>🎲 <strong>Random:</strong> Pick a random server</li>
+                <li>🏋️ <strong>Weighted:</strong> More powerful servers get more traffic</li>
+                <li>📍 <strong>IP Hash:</strong> Same user always goes to same server</li>
+            </ul>
+
+            <h2>Types of Load Balancers</h2>
+            <ul>
+                <li>🌐 <strong>Layer 4 (Transport):</strong> Based on IP/Port</li>
+                <li>📡 <strong>Layer 7 (Application):</strong> Based on content/URL</li>
+                <li>☁️ <strong>Cloud:</strong> AWS ELB, Azure Load Balancer</li>
+                <li>🔧 <strong>Software:</strong> Nginx, HAProxy</li>
+            </ul>
+
+            <h2>Health Checks</h2>
+            <p>Load balancers constantly check if servers are healthy:</p>
+            <ul>
+                <li>✅ Send test requests</li>
+                <li>✅ Remove unhealthy servers</li>
+                <li>✅ Add them back when recovered</li>
+            </ul>
+
+            <h2>Real-World Examples</h2>
+            <ul>
+                <li>🎬 <strong>Netflix:</strong> Millions of streams distributed</li>
+                <li>🛒 <strong>E-commerce:</strong> Black Friday traffic spikes</li>
+                <li>🎮 <strong>Gaming:</strong> Multiplayer game servers</li>
+                <li>📱 <strong>Social Media:</strong> Billions of requests daily</li>
+            </ul>
+
+            <p><strong>The bottom line:</strong> Load balancers are like restaurant hosts - they distribute traffic
+                evenly across servers to ensure smooth, reliable service for everyone!</p>
+
+            <div class="tags">
+                <span class="tag">Load Balancing</span>
+                <span class="tag">Scalability</span>
+                <span class="tag">DevOps</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
