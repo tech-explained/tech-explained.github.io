@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment Variables Explained: Think Settings File | Tech Made Simple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>⚙️ Environment Variables: Think Settings File</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 4 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">⚙️</div>
+
+            <p>Environment variables store configuration outside your code. Think of them as a <strong>settings
+                    file</strong> - change settings without changing code.</p>
+
+            <div class="example-box">
+                <strong>⚙️ The Settings File Analogy</strong>
+                <p>Like game settings (volume, difficulty) stored separately from the game code. Environment variables
+                    store API keys, database URLs, etc. outside your code - change environments without code changes!
+                </p>
+            </div>
+
+            <h2>Why Use Them?</h2>
+            <ul>
+                <li>🔒 <strong>Security:</strong> Keep secrets out of code</li>
+                <li>🔄 <strong>Flexibility:</strong> Different settings per environment</li>
+                <li>📦 <strong>Portability:</strong> Same code, different configs</li>
+                <li>👥 <strong>Team Collaboration:</strong> Each dev has own settings</li>
+            </ul>
+
+            <h2>Common Variables</h2>
+            <ul>
+                <li>🔑 <strong>API_KEY:</strong> Third-party service keys</li>
+                <li>💾 <strong>DATABASE_URL:</strong> Database connection</li>
+                <li>🌐 <strong>PORT:</strong> Server port number</li>
+                <li>🏷️ <strong>NODE_ENV:</strong> development/production</li>
+                <li>📧 <strong>EMAIL_SERVICE:</strong> Email provider settings</li>
+            </ul>
+
+            <h2>How to Use</h2>
+            <div class="example-box">
+                <strong>Node.js Example</strong>
+                <p>// Access environment variable<br>
+                    const apiKey = process.env.API_KEY;<br>
+                    const dbUrl = process.env.DATABASE_URL;</p>
+            </div>
+
+            <h2>.env File</h2>
+            <div class="example-box">
+                <strong>Example .env</strong>
+                <p>API_KEY=your_secret_key_here<br>
+                    DATABASE_URL=postgres://localhost/mydb<br>
+                    PORT=3000<br>
+                    NODE_ENV=development</p>
+            </div>
+
+            <h2>Best Practices</h2>
+            <ul>
+                <li>🚫 <strong>Never Commit:</strong> Add .env to .gitignore</li>
+                <li>📝 <strong>Document:</strong> Provide .env.example</li>
+                <li>🔐 <strong>Secrets:</strong> Use for sensitive data</li>
+                <li>✅ <strong>Validate:</strong> Check required variables exist</li>
+            </ul>
+
+            <h2>Environments</h2>
+            <ul>
+                <li>💻 <strong>Development:</strong> Local machine</li>
+                <li>🧪 <strong>Testing:</strong> Test database</li>
+                <li>🎭 <strong>Staging:</strong> Pre-production</li>
+                <li>🚀 <strong>Production:</strong> Live site</li>
+            </ul>
+
+            <p><strong>The bottom line:</strong> Environment variables store configuration outside code. Like a settings
+                file, they let you change behavior without changing code!</p>
+
+            <div class="tags">
+                <span class="tag">Environment Variables</span>
+                <span class="tag">Configuration</span>
+                <span class="tag">Security</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

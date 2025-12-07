@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL Explained: Think Custom Menu | Tech Made Simple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>🎯 GraphQL: Think Custom Menu</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 6 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">🎯</div>
+
+            <p>GraphQL is a query language for APIs. Think of it as a <strong>custom menu</strong> - order exactly what
+                you want, nothing more, nothing less.</p>
+
+            <div class="example-box">
+                <strong>🎯 The Custom Menu Analogy</strong>
+                <p>REST is like a fixed combo meal - you get everything even if you only want fries. GraphQL is like
+                    ordering à la carte - pick exactly what you want: "Just fries and a drink, no burger."</p>
+            </div>
+
+            <h2>REST vs GraphQL</h2>
+            <p><strong>REST:</strong></p>
+            <ul>
+                <li>Multiple endpoints (/users, /posts, /comments)</li>
+                <li>Fixed data structure</li>
+                <li>Often over-fetches or under-fetches</li>
+            </ul>
+            <p><strong>GraphQL:</strong></p>
+            <ul>
+                <li>Single endpoint (/graphql)</li>
+                <li>Request exactly what you need</li>
+                <li>Get precisely that data</li>
+            </ul>
+
+            <h2>Key Concepts</h2>
+            <ul>
+                <li>📝 <strong>Query:</strong> Request data (like SELECT)</li>
+                <li>✏️ <strong>Mutation:</strong> Modify data (like INSERT/UPDATE)</li>
+                <li>🔔 <strong>Subscription:</strong> Real-time updates</li>
+                <li>📋 <strong>Schema:</strong> Define available data</li>
+            </ul>
+
+            <h2>Example Query</h2>
+            <div class="example-box">
+                <strong>Get User with Specific Fields</strong>
+                <p>query {<br>
+                    &nbsp;&nbsp;user(id: "123") {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;name<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;email<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;posts {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;}<br>
+                    }</p>
+            </div>
+
+            <h2>Benefits</h2>
+            <ul>
+                <li>⚡ <strong>Efficient:</strong> No over-fetching or under-fetching</li>
+                <li>🎯 <strong>Flexible:</strong> Clients control data shape</li>
+                <li>📱 <strong>Mobile-Friendly:</strong> Reduce bandwidth</li>
+                <li>🔄 <strong>Single Request:</strong> Get related data together</li>
+                <li>📖 <strong>Self-Documenting:</strong> Schema describes everything</li>
+            </ul>
+
+            <h2>Real-World Examples</h2>
+            <ul>
+                <li>📘 <strong>Facebook:</strong> Created GraphQL</li>
+                <li>🐙 <strong>GitHub:</strong> API v4 uses GraphQL</li>
+                <li>🛒 <strong>Shopify:</strong> E-commerce API</li>
+                <li>📺 <strong>Netflix:</strong> Internal APIs</li>
+            </ul>
+
+            <h2>When to Use GraphQL</h2>
+            <ul>
+                <li>✅ Complex, nested data</li>
+                <li>✅ Multiple clients with different needs</li>
+                <li>✅ Mobile apps (bandwidth concerns)</li>
+                <li>✅ Rapid frontend development</li>
+                <li>❌ Simple CRUD operations (REST might be easier)</li>
+            </ul>
+
+            <p><strong>The bottom line:</strong> GraphQL lets clients request exactly the data they need. Like ordering
+                à la carte, you get precisely what you want without waste!</p>
+
+            <div class="tags">
+                <span class="tag">GraphQL</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Query Language</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

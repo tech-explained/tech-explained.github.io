@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Explained: Think Find and Replace | Tech Made Simple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>🔍 Regex: Think Find and Replace</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 5 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">🔍</div>
+
+            <p>Regular Expressions (Regex) are patterns for finding text. Think of them as <strong>super-powered find
+                    and replace</strong> - search for patterns, not just exact matches.</p>
+
+            <div class="example-box">
+                <strong>🔍 The Find and Replace Analogy</strong>
+                <p>Basic find: "Find 'cat'" finds only "cat". Regex: "Find any 3-letter word starting with 'c'" finds
+                    "cat", "car", "can", etc. It's pattern matching, not exact matching!</p>
+            </div>
+
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>✅ <strong>Validation:</strong> Check email format</li>
+                <li>🔍 <strong>Search:</strong> Find phone numbers</li>
+                <li>✏️ <strong>Replace:</strong> Format text</li>
+                <li>✂️ <strong>Extract:</strong> Pull data from strings</li>
+            </ul>
+
+            <h2>Basic Patterns</h2>
+            <ul>
+                <li>📝 <strong>.</strong> - Any character</li>
+                <li>🔢 <strong>\d</strong> - Any digit (0-9)</li>
+                <li>🔤 <strong>\w</strong> - Any word character</li>
+                <li>⬜ <strong>\s</strong> - Whitespace</li>
+                <li>🔄 <strong>*</strong> - Zero or more</li>
+                <li>➕ <strong>+</strong> - One or more</li>
+                <li>❓ <strong>?</strong> - Optional</li>
+            </ul>
+
+            <h2>Examples</h2>
+            <div class="example-box">
+                <strong>Email Validation</strong>
+                <p>Pattern: ^\w+@\w+\.\w+$<br>
+                    Matches: user@example.com<br>
+                    Doesn't match: invalid.email</p>
+            </div>
+
+            <div class="example-box">
+                <strong>Phone Number</strong>
+                <p>Pattern: \d{3}-\d{3}-\d{4}<br>
+                    Matches: 555-123-4567<br>
+                    Format: XXX-XXX-XXXX</p>
+            </div>
+
+            <h2>Real-World Uses</h2>
+            <ul>
+                <li>📧 <strong>Email Validation:</strong> Check format</li>
+                <li>🔐 <strong>Password Rules:</strong> Enforce complexity</li>
+                <li>📱 <strong>Phone Formatting:</strong> Extract numbers</li>
+                <li>🌐 <strong>URL Parsing:</strong> Extract domains</li>
+                <li>📄 <strong>Log Analysis:</strong> Find patterns</li>
+            </ul>
+
+            <h2>Tips</h2>
+            <ul>
+                <li>🧪 <strong>Test First:</strong> Use regex101.com</li>
+                <li>📖 <strong>Keep Simple:</strong> Complex regex is hard to read</li>
+                <li>💬 <strong>Comment:</strong> Explain complex patterns</li>
+                <li>⚠️ <strong>Escape Special:</strong> Use \ for literal characters</li>
+            </ul>
+
+            <p><strong>The bottom line:</strong> Regex is pattern matching for text. Like super-powered find and
+                replace, it searches for patterns instead of exact matches!</p>
+
+            <div class="tags">
+                <span class="tag">Regex</span>
+                <span class="tag">Pattern Matching</span>
+                <span class="tag">Text Processing</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

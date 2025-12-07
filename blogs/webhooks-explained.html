@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhooks Explained: Think Doorbell Notification | Tech Made Simple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+            <h1>🔔 Webhooks: Think Doorbell Notification</h1>
+            <p class="post-meta">📅 December 7, 2025 | ⏱️ 4 min read</p>
+        </div>
+    </header>
+    <main class="container">
+        <article>
+            <div class="hero-icon">🔔</div>
+
+            <p>Webhooks send automatic notifications when events happen. Think of them as a <strong>doorbell</strong> -
+                rings when someone arrives, you don't check constantly.</p>
+
+            <div class="example-box">
+                <strong>🔔 The Doorbell Analogy</strong>
+                <p>Without webhooks: Check door every minute (polling). With webhooks: Doorbell rings when someone
+                    arrives (event-driven). Much more efficient!</p>
+            </div>
+
+            <h2>How Webhooks Work</h2>
+            <ol>
+                <li>You register a URL with a service</li>
+                <li>Event happens (payment, signup, etc.)</li>
+                <li>Service sends HTTP POST to your URL</li>
+                <li>Your app receives and processes data</li>
+            </ol>
+
+            <h2>Polling vs Webhooks</h2>
+            <p><strong>Polling (Old Way):</strong></p>
+            <ul>
+                <li>Check for updates repeatedly</li>
+                <li>Wastes resources</li>
+                <li>Delayed notifications</li>
+            </ul>
+            <p><strong>Webhooks (Modern):</strong></p>
+            <ul>
+                <li>Get notified immediately</li>
+                <li>Efficient</li>
+                <li>Real-time updates</li>
+            </ul>
+
+            <h2>Common Use Cases</h2>
+            <ul>
+                <li>💳 <strong>Payments:</strong> Stripe notifies payment success</li>
+                <li>📧 <strong>Email:</strong> SendGrid reports delivery</li>
+                <li>🐙 <strong>GitHub:</strong> Notify on push/PR</li>
+                <li>💬 <strong>Slack:</strong> Bot receives messages</li>
+                <li>📦 <strong>Shipping:</strong> Track package updates</li>
+            </ul>
+
+            <h2>Example Webhook</h2>
+            <div class="example-box">
+                <strong>GitHub Push Notification</strong>
+                <p>When code is pushed, GitHub sends:<br>
+                    POST /webhook<br>
+                    {<br>
+                    &nbsp;&nbsp;"event": "push",<br>
+                    &nbsp;&nbsp;"repository": "my-repo",<br>
+                    &nbsp;&nbsp;"commits": [...]<br>
+                    }</p>
+            </div>
+
+            <h2>Best Practices</h2>
+            <ul>
+                <li>🔐 <strong>Verify Signatures:</strong> Ensure authentic requests</li>
+                <li>⚡ <strong>Respond Quickly:</strong> Return 200 fast</li>
+                <li>🔄 <strong>Handle Retries:</strong> Services retry failures</li>
+                <li>📝 <strong>Log Everything:</strong> Debug issues</li>
+                <li>🧪 <strong>Test Thoroughly:</strong> Use test webhooks</li>
+            </ul>
+
+            <h2>Popular Services</h2>
+            <ul>
+                <li>Stripe (payments)</li>
+                <li>GitHub (code events)</li>
+                <li>Twilio (SMS/calls)</li>
+                <li>Shopify (e-commerce)</li>
+                <li>Zapier (automation)</li>
+            </ul>
+
+            <p><strong>The bottom line:</strong> Webhooks notify you when events happen. Like a doorbell, they alert you
+                immediately instead of making you check constantly!</p>
+
+            <div class="tags">
+                <span class="tag">Webhooks</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Event-Driven</span>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Made Simple. Making software engineering accessible to everyone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
